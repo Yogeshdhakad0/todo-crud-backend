@@ -12,7 +12,7 @@ const cors = require('cors');
 app.use(cors());
 
  app.get('/',(req,res)=>{
-    res.send('yas tart')
+    res.send('welcome to  todo')
  })
  app.use(express.json())
  app.use(express.urlencoded({extended:true}))
