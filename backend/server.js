@@ -1,6 +1,7 @@
  const express =require('express')
 const conntectDB = require('./config/db_config')
 const cors = require('cors');
+   const app=express()
    require('dotenv').config()
    // require('dotenv').config();
 
@@ -9,7 +10,7 @@ const cors = require('cors');
    conntectDB()
 
 app.use(cors());
-   const app=express()
+
  app.get('/',(req,res)=>{
     res.send('yas tart')
  })
